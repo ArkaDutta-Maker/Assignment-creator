@@ -68,7 +68,7 @@ for i in range(2,8):
                     
                 else:
                     idx = int(p.rstrip(".c"))
-                #run_c_program(i, idx,os.path.join(path, p))
+                run_c_program(i, idx,os.path.join(path, p))
                 res[i].append([os.path.join(path, p), f"screenshot{i}({idx}).jpg", idx])
                
 print(res)
