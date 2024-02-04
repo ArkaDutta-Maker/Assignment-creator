@@ -37,7 +37,7 @@ def img(ass_no, idx):
     pyautogui.screenshot(f'screenshot{ass_no}({idx}).jpg')
     im = Image.open(f'screenshot{ass_no}({idx}).jpg')
     im = im.crop((left, top, right, bottom))
-
+    #Comment below line out if you are not in dark mode of cmd
     im = ImageOps.invert(im)
     im.save(f'screenshot{ass_no}({idx}).jpg')
 
