@@ -59,11 +59,11 @@ for i in range(2,8):
     res[i] = []
 for i in range(2,8):
     
-    path = f"G:\\Assignment-{i}"
+    path = f"G:\\Assignment-{i}" # Folder name where Assignment wise programs are allocated
     for p in os.listdir(path):
         if os.path.isfile(os.path.join(path, p)):
             if(p.endswith(".c")):
-                if(p.startswith("p")):
+                if(p.startswith("p")):#Pls give the programs a numbered pattern like 1.c 2.c, etc...or write p1.c, p2.c otherwise it won't work
                     idx = int(p.lstrip("p").rstrip(".c"))
                     
                 else:
